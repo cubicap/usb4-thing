@@ -398,7 +398,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "SW"
+		(property "Reference" "IC"
 			(at 0 1.016 0)
 			(effects
 				(font
@@ -406,7 +406,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "PI3DBS16412ZHEX"
 			(at 15.24 0 0)
 			(effects
 				(font

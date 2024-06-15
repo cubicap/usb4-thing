@@ -2955,10 +2955,6 @@
 		(uuid "53ed87e0-e6d6-48a7-9979-bd1d503b9739")
 	)
 	(no_connect
-		(at 152.4 64.77)
-		(uuid "5451391b-4f78-4fec-a66f-8f728a125c7b")
-	)
-	(no_connect
 		(at 165.1 71.12)
 		(uuid "5ed01193-b931-4302-ba9c-d9c42b314847")
 	)
@@ -3040,6 +3036,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 130.81) (xy 113.03 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "073ae6d8-1f44-492a-bc35-d450a247f4d2")
+	)
+	(wire
+		(pts
 			(xy 165.1 58.42) (xy 205.74 58.42)
 		)
 		(stroke
@@ -3117,6 +3123,16 @@
 			(type default)
 		)
 		(uuid "1c73b329-53b4-4594-8cba-8009f86d3ad1")
+	)
+	(wire
+		(pts
+			(xy 152.4 130.81) (xy 152.4 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b71096a-2ce5-40e4-8163-f6defceb8ee4")
 	)
 	(wire
 		(pts
@@ -3260,7 +3276,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 121.92) (xy 152.4 133.35)
+			(xy 152.4 121.92) (xy 152.4 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3600,7 +3616,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 73.66) (xy 113.03 133.35)
+			(xy 113.03 73.66) (xy 113.03 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4153,7 +4169,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02328f0e-fa0f-43e8-a4ff-1b1b53374268")
-		(property "Reference" "C4"
+		(property "Reference" "C12"
 			(at 127 20.2692 90)
 			(effects
 				(font
@@ -4223,7 +4239,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "C4")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -4327,7 +4343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "130cde39-ac80-4918-9bb1-64b7e0dfacf2")
-		(property "Reference" "IC6"
+		(property "Reference" "IC7"
 			(at 148.59 40.64 0)
 			(effects
 				(font
@@ -4572,7 +4588,103 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "IC6")
+					(reference "IC7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 113.03 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "142d9232-93b9-47ec-8787-d9967cf56e83")
+		(property "Reference" "R7"
+			(at 114.3 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330R"
+			(at 114.3 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 111.252 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 113.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" ""
+			(at 113.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "B"
+			(at 113.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdb182c3-2963-478a-88e8-e722de5d7396")
+		)
+		(pin "2"
+			(uuid "362c75d9-ea41-4d81-98ec-1434f5728138")
+		)
+		(instances
+			(project "usb-switch"
+				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4587,7 +4699,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "162ee0ba-3d2e-4546-8e31-49e52dd7d3b6")
-		(property "Reference" "C5"
+		(property "Reference" "C13"
 			(at 127 30.4292 90)
 			(effects
 				(font
@@ -4657,7 +4769,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "C5")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -4737,7 +4849,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b250d18-931b-42f9-81a8-d1dd29d6b45b")
-		(property "Reference" "R9"
+		(property "Reference" "R5"
 			(at 81.28 62.23 90)
 			(effects
 				(font
@@ -4807,7 +4919,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "R9")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4823,7 +4935,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e556326-064c-44ea-b737-40fbec74781a")
-		(property "Reference" "C6"
+		(property "Reference" "C14"
 			(at 146.05 146.05 0)
 			(effects
 				(font
@@ -4911,7 +5023,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "C6")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -4991,7 +5103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5cedda7b-6907-4070-8a53-c0cfa47e37d7")
-		(property "Reference" "SW3"
+		(property "Reference" "SW2"
 			(at 146.05 134.62 90)
 			(effects
 				(font
@@ -5063,7 +5175,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "SW3")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -5078,7 +5190,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "649c903f-3dec-403e-8805-c1f3a04701c2")
-		(property "Reference" "R10"
+		(property "Reference" "R6"
 			(at 88.9 62.23 90)
 			(effects
 				(font
@@ -5148,7 +5260,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "R10")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -5392,7 +5504,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d3be77a-4c1d-40f2-a6a4-391faafff9a6")
-		(property "Reference" "R6"
+		(property "Reference" "R10"
 			(at 160.02 134.62 0)
 			(effects
 				(font
@@ -5473,7 +5585,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "R6")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -5640,7 +5752,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9552af22-ba8a-4b70-9bf9-cf23d5ff038b")
-		(property "Reference" "C1"
+		(property "Reference" "C9"
 			(at 43.561 138.5316 0)
 			(effects
 				(font
@@ -5712,7 +5824,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "C1")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -5728,7 +5840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f42856a-6d49-4af6-91d6-cbdba3ef4e35")
-		(property "Reference" "J6"
+		(property "Reference" "J4"
 			(at 54.61 53.34 0)
 			(effects
 				(font
@@ -5825,7 +5937,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "J6")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -5840,7 +5952,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3033b4d-da5a-47be-a001-406b96d181e3")
-		(property "Reference" "R5"
+		(property "Reference" "R8"
 			(at 120.65 134.62 0)
 			(effects
 				(font
@@ -5921,7 +6033,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "R5")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -5936,7 +6048,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8d6a8f7-7f28-4882-9aae-8a8c023eddae")
-		(property "Reference" "R8"
+		(property "Reference" "R12"
 			(at 193.04 87.63 90)
 			(effects
 				(font
@@ -6006,7 +6118,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "R8")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6021,7 +6133,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b17cf050-a2bd-483e-97ac-3a791f327629")
-		(property "Reference" "C2"
+		(property "Reference" "C10"
 			(at 74.041 138.5316 0)
 			(effects
 				(font
@@ -6093,7 +6205,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "C2")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -6108,7 +6220,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d29c1b60-85db-4f6f-bb2e-51771d805305")
-		(property "Reference" "R7"
+		(property "Reference" "R11"
 			(at 201.93 87.63 90)
 			(effects
 				(font
@@ -6178,7 +6290,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "R7")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -6194,7 +6306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3ef7fff-7672-4db3-ba28-5026b4115d7c")
-		(property "Reference" "SW2"
+		(property "Reference" "SW1"
 			(at 106.68 134.62 90)
 			(effects
 				(font
@@ -6266,7 +6378,7 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -6282,7 +6394,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa50dea1-6f48-4549-b060-aa4647653e40")
-		(property "Reference" "C3"
+		(property "Reference" "C11"
 			(at 106.68 146.05 0)
 			(effects
 				(font
@@ -6370,7 +6482,103 @@
 		(instances
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
-					(reference "C3")
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 152.4 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff8cc395-7214-4ee3-a152-f4d75ca7d623")
+		(property "Reference" "R9"
+			(at 153.67 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330R"
+			(at 153.67 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 150.622 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" ""
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "B"
+			(at 152.4 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "615d5524-668f-43e8-b780-cf65dce2e951")
+		)
+		(pin "2"
+			(uuid "c3d0cf97-db4b-42ad-999d-7474547d29df")
+		)
+		(instances
+			(project "usb-switch"
+				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
+					(reference "R9")
 					(unit 1)
 				)
 			)

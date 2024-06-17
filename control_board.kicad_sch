@@ -3056,6 +3056,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 93.98) (xy 91.44 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "110e90c2-5290-4b1c-9ed3-afb8d0de6fb0")
+	)
+	(wire
+		(pts
 			(xy 40.64 135.89) (xy 40.64 133.35)
 		)
 		(stroke
@@ -3136,6 +3146,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 101.6) (xy 100.33 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f0f2e47-58fd-44ec-b257-fe8739b1e57e")
+	)
+	(wire
+		(pts
 			(xy 69.85 76.2) (xy 69.85 78.74)
 		)
 		(stroke
@@ -3143,6 +3163,16 @@
 			(type default)
 		)
 		(uuid "2fbf948d-ae45-4f89-a7d5-8667617bb9c4")
+	)
+	(wire
+		(pts
+			(xy 91.44 91.44) (xy 132.08 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34479db3-5d69-4635-8f69-f3e3127a1369")
 	)
 	(wire
 		(pts
@@ -3266,6 +3296,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 93.98) (xy 132.08 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e3b6458-1d2f-45b3-b0b8-7f1c18ad88d5")
+	)
+	(wire
+		(pts
 			(xy 152.4 121.92) (xy 152.4 123.19)
 		)
 		(stroke
@@ -3293,6 +3333,16 @@
 			(type default)
 		)
 		(uuid "785a6b94-b3f4-44b1-89e5-8621c2bca4e0")
+	)
+	(wire
+		(pts
+			(xy 91.44 105.41) (xy 91.44 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d399885-11b4-4ce4-8795-b4b6f22c2738")
 	)
 	(wire
 		(pts
@@ -3770,7 +3820,7 @@
 	)
 	(hierarchical_label "EN"
 		(shape input)
-		(at 132.08 91.44 180)
+		(at 91.44 105.41 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3914,7 +3964,7 @@
 	)
 	(hierarchical_label "SEL"
 		(shape input)
-		(at 132.08 93.98 180)
+		(at 100.33 105.41 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4756,6 +4806,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 100.33 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b8c4a50-fe14-4cc7-b36a-2d7e5bbdc472")
+		(property "Reference" "R14"
+			(at 99.06 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330R"
+			(at 99.06 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 102.108 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" ""
+			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "B"
+			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b694e35a-2d22-4b29-adf4-17cdc9e58f4c")
+		)
+		(pin "2"
+			(uuid "6d00e46d-3856-4e43-957f-ca7f91feda57")
+		)
+		(instances
+			(project "usb-switch"
+				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Logic_tabor-rescue:PWR_FLAG-power")
 		(at 40.64 133.35 0)
 		(unit 1)
@@ -5406,6 +5552,102 @@
 			(project "usb-switch"
 				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 91.44 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6de58eb3-c9fe-463b-b0ce-6bec8828783c")
+		(property "Reference" "R13"
+			(at 90.17 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330R"
+			(at 90.17 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 93.218 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 91.44 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" ""
+			(at 91.44 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Basic/Extended" "B"
+			(at 91.44 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6328271d-82b6-446d-b60a-b75e434c4f1b")
+		)
+		(pin "2"
+			(uuid "a5bd5ac5-8a50-4f10-8f71-a7d403134a8e")
+		)
+		(instances
+			(project "usb-switch"
+				(path "/79003e62-8193-4467-8c13-bb2f1c773c85/75ff4b9f-aa1b-49d1-a6d7-3531ac2b67a9"
+					(reference "R13")
 					(unit 1)
 				)
 			)
